@@ -13,9 +13,9 @@ package ch6.MoneyTest;
  *  hashCode()
  *  Equal null
  *  Equal object
- *  5 CHF * 2 = 10 CHF  <<-- Focus of this Chapter (Franc-ly speaking)
+ *  5 CHF * 2 = 10 CHF  <<-- XX
  *  Dollar/Franc duplication
- *  Common equals
+ *  Common equals<<-- XX Focus of this Chapter (Ch6) - Equality for All, Redux
  *  Common times
  */
 
