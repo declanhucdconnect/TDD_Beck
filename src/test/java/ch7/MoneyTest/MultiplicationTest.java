@@ -17,7 +17,7 @@ package ch7.MoneyTest;
  *  Dollar/Franc duplication
  *  Common equals <<-- XX
  *  Common times
- *  Compare Francs with Dollars <<-- XX Focus of Chapter 7 - Apples and Orances
+ *  Compare Francs with Dollars <<-- XX Focus of Chapter 7 - Apples and Oranges
  */
 
 import ch7.MoneyTest.Dollar;
