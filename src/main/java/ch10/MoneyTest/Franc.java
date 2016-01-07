@@ -4,7 +4,8 @@ public class Franc extends Money {
 
     // Make this call the static method, not the constructor
     Money times(int multiplier){
-        return Money.franc(amount * multiplier);
+//        return new Franc(amount * multiplier, "CHF");
+        return new Franc(amount * multiplier, currency);
     }
 
     Franc(int amount, String currency){
