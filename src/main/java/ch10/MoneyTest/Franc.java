@@ -3,10 +3,12 @@ package ch10.MoneyTest;
 public class Franc extends Money {
 
     // Make this call the static method, not the constructor
-    Money times(int multiplier){
-//        return new Franc(amount * multiplier, "CHF");
-        return new Franc(amount * multiplier, currency);
-    }
+//    Money times(int multiplier){
+////        return new Franc(amount * multiplier, "CHF");
+//        //return new Money(amount * multiplier, currency);
+//        // return new Franc(amount * multiplier, currency);
+//        return new Money(amount * multiplier, currency);
+//    }
 
     Franc(int amount, String currency){
        super(amount,currency);

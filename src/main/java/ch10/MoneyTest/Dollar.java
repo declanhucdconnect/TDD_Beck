@@ -3,10 +3,12 @@ package ch10.MoneyTest;
 
 public class Dollar extends Money {
 
-    Money times(int multiplier){
-        //return Money.dollar(amount * multiplier);
-        return new Dollar (amount * multiplier, "USD");
-    }
+//    Money times(int multiplier){
+//        //return Money.dollar(amount * multiplier);
+//        // return new Dollar (amount * multiplier, "USD");
+//        //return new Dollar (amount * multiplier, currency);
+//        return new Money(amount * multiplier, currency);
+//    }
 
     /*
     @Override

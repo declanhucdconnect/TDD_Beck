@@ -3,8 +3,11 @@ package ch10.MoneyTest;
 /**
  * Created by declanh on 1/5/2016.
  */
-abstract class Money {
-    abstract Money times(int multiplier);
+class Money {
+
+    Money times(int multiplier){
+        return new Money(amount * multiplier, currency);
+    }
 
 
     Money(int amount, String currency){
@@ -28,7 +31,7 @@ abstract class Money {
     public boolean equals(Object object){
         Money money = (Money) object;
         return amount == money.amount
-                && getClass().equals(money.getClass());
+                && currency().equals(money.currency());
     }
 
     /**
@@ -55,6 +58,11 @@ abstract class Money {
     }
     static Money franc(int amount){
         return new Franc(amount, "CHF");
+    }
+
+
+    public String toString(){
+        return amount + " " + currency;
     }
 
 }

@@ -16,7 +16,7 @@ package ch10.MoneyTest;
  *  5 CHF * 2 = 10 CHF  <<-- XX
  *  Dollar/Franc duplication  (Not quite completed yet! - dh)
  *  Common equals <<-- XX
- *  Common times
+ *  Common times <<-- XX Focus of Chapter 10
  *  Compare Francs with Dollars
  *  Currency ? <<-- XX Focus of Chapter 9 - Times We're Livin' In
  *  Delete testFrancMultiplication ?
@@ -72,5 +72,10 @@ public class MultiplicationTest {
         assertEquals("USD", Money.dollar(1).currency());
         assertEquals("CHF", Money.franc(1).currency());
 
+    }
+
+    @Test
+    public void testDifferentClassEquality(){
+        assertTrue(new Money(10, "CHF").equals(new Franc(10, "CHF")));
     }
 }
